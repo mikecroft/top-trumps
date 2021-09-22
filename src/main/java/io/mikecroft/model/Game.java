@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.json.bind.Jsonb;
-import javax.json.bind.JsonbBuilder;
-
 public class Game {
 
     private final List<Hero> playerDeck = new ArrayList<Hero>();
@@ -33,8 +30,6 @@ public class Game {
     }
 
     public List<Hero> getPlayerWins(){
-        String jsonb = JsonbBuilder.create().toJson(playerWins);
-
         return playerWins;
     }
 
